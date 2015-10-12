@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751D80A387E6CA53C070FD3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 067176FC4228220DD0BD0506 /* libPods.a */; };
+		F50234F11BB3DE89002E73A1 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F50234F01BB3DE89002E73A1 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F50235011BB3E11B002E73A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F50234F81BB3E11B002E73A1 /* AppDelegate.m */; };
+		F50235021BB3E11B002E73A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F50234F91BB3E11B002E73A1 /* main.m */; };
+		F50235271BB3E2DD002E73A1 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235121BB3E2DD002E73A1 /* BaseEntity.m */; };
+		F50235281BB3E2DD002E73A1 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235141BB3E2DD002E73A1 /* BaseRequest.m */; };
+		F50235291BB3E2DD002E73A1 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235171BB3E2DD002E73A1 /* BaseNavigationController.m */; };
+		F502352A1BB3E2DD002E73A1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F502351A1BB3E2DD002E73A1 /* BaseViewController.m */; };
+		F502352B1BB3E2DD002E73A1 /* BCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F502351D1BB3E2DD002E73A1 /* BCWebViewController.m */; };
+		F502352C1BB3E2DD002E73A1 /* BCWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F502351E1BB3E2DD002E73A1 /* BCWebViewController.xib */; };
+		F502352D1BB3E2DD002E73A1 /* BCConfigurations.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235221BB3E2DD002E73A1 /* BCConfigurations.m */; };
+		F50235311BB3E424002E73A1 /* BCGlobalEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235301BB3E424002E73A1 /* BCGlobalEntity.m */; };
+		F50235351BB3E501002E73A1 /* LafontMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235331BB3E501002E73A1 /* LafontMainViewController.m */; };
+		F50235361BB3E501002E73A1 /* LafontMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50235341BB3E501002E73A1 /* LafontMainViewController.xib */; };
+		F502353A1BB3E741002E73A1 /* QMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F50235381BB3E741002E73A1 /* QMapKit.bundle */; };
+		F502353B1BB3E741002E73A1 /* QMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50235391BB3E741002E73A1 /* QMapKit.framework */; };
+		F502353E1BB3F29B002E73A1 /* LafontHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F502353D1BB3F29B002E73A1 /* LafontHomeViewController.m */; };
+		F50235451BB3F2D9002E73A1 /* LafontServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50235441BB3F2D9002E73A1 /* LafontServiceViewController.m */; };
+		F50235471BB3FFD9002E73A1 /* LafontHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50235461BB3FFD9002E73A1 /* LafontHomeViewController.xib */; };
+		F50235491BB40148002E73A1 /* LafontServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50235481BB40148002E73A1 /* LafontServiceViewController.xib */; };
+		F50235501BB4F753002E73A1 /* LafontLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F502354F1BB4F753002E73A1 /* LafontLoginViewController.m */; };
+		F58BA8BD1BB3D13900743125 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58BA8BC1BB3D13900743125 /* Images.xcassets */; };
+		F58BA8CC1BB3D13A00743125 /* LafontCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8CB1BB3D13A00743125 /* LafontCarTests.m */; };
+		F58BA8D81BB3D15100743125 /* ZDLaunchMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8D71BB3D15100743125 /* ZDLaunchMenu.m */; };
+		F58BA8ED1BB3D33E00743125 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8DB1BB3D33E00743125 /* NSObject+Addition.m */; };
+		F58BA8EE1BB3D33E00743125 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8DD1BB3D33E00743125 /* NSString+Addition.m */; };
+		F58BA8EF1BB3D33E00743125 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8DF1BB3D33E00743125 /* UIColor+Addition.m */; };
+		F58BA8F01BB3D33E00743125 /* UIDevice+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8E11BB3D33E00743125 /* UIDevice+Addition.m */; };
+		F58BA8F11BB3D33E00743125 /* UIFont+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8E31BB3D33E00743125 /* UIFont+Addition.m */; };
+		F58BA8F21BB3D33E00743125 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8E51BB3D33E00743125 /* UIImage+Addition.m */; };
+		F58BA8F31BB3D33E00743125 /* UIScreen+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8E71BB3D33E00743125 /* UIScreen+Addition.m */; };
+		F58BA8F41BB3D33E00743125 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8E91BB3D33E00743125 /* UIView+Addition.m */; };
+		F58BA8F51BB3D33E00743125 /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BA8EB1BB3D33E00743125 /* UIViewController+Additions.m */; };
+		F5A5B26A1BB51F7300191213 /* LafontLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A5B2691BB51F7300191213 /* LafontLoginViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F58BA8C61BB3D13A00743125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F58BA8A41BB3D13900743125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F58BA8AB1BB3D13900743125;
+			remoteInfo = LafontCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		067176FC4228220DD0BD0506 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26368A7882075F256BB06FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F50234EC1BB3DE35002E73A1 /* ZDCommonDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCommonDefines.h; sourceTree = "<group>"; };
+		F50234ED1BB3DE35002E73A1 /* ZDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDDefines.h; sourceTree = "<group>"; };
+		F50234EF1BB3DE89002E73A1 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		F50234F01BB3DE89002E73A1 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		F50234F71BB3E11B002E73A1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F50234F81BB3E11B002E73A1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F50234F91BB3E11B002E73A1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F50235111BB3E2DD002E73A1 /* BaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEntity.h; sourceTree = "<group>"; };
+		F50235121BB3E2DD002E73A1 /* BaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEntity.m; sourceTree = "<group>"; };
+		F50235131BB3E2DD002E73A1 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		F50235141BB3E2DD002E73A1 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		F50235161BB3E2DD002E73A1 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		F50235171BB3E2DD002E73A1 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		F50235191BB3E2DD002E73A1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F502351A1BB3E2DD002E73A1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F502351C1BB3E2DD002E73A1 /* BCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWebViewController.h; sourceTree = "<group>"; };
+		F502351D1BB3E2DD002E73A1 /* BCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWebViewController.m; sourceTree = "<group>"; };
+		F502351E1BB3E2DD002E73A1 /* BCWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCWebViewController.xib; sourceTree = "<group>"; };
+		F50235201BB3E2DD002E73A1 /* BCConfigurationDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConfigurationDefines.h; sourceTree = "<group>"; };
+		F50235211BB3E2DD002E73A1 /* BCConfigurations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConfigurations.h; sourceTree = "<group>"; };
+		F50235221BB3E2DD002E73A1 /* BCConfigurations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCConfigurations.m; sourceTree = "<group>"; };
+		F50235241BB3E2DD002E73A1 /* BCConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConstant.h; sourceTree = "<group>"; };
+		F50235251BB3E2DD002E73A1 /* BCConstantFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConstantFont.h; sourceTree = "<group>"; };
+		F50235261BB3E2DD002E73A1 /* BCConstantUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConstantUserDefaults.h; sourceTree = "<group>"; };
+		F502352F1BB3E424002E73A1 /* BCGlobalEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGlobalEntity.h; sourceTree = "<group>"; };
+		F50235301BB3E424002E73A1 /* BCGlobalEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGlobalEntity.m; sourceTree = "<group>"; };
+		F50235321BB3E501002E73A1 /* LafontMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LafontMainViewController.h; sourceTree = "<group>"; };
+		F50235331BB3E501002E73A1 /* LafontMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LafontMainViewController.m; sourceTree = "<group>"; };
+		F50235341BB3E501002E73A1 /* LafontMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LafontMainViewController.xib; sourceTree = "<group>"; };
+		F50235381BB3E741002E73A1 /* QMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMapKit.bundle; sourceTree = "<group>"; };
+		F50235391BB3E741002E73A1 /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMapKit.framework; sourceTree = "<group>"; };
+		F502353C1BB3F29B002E73A1 /* LafontHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LafontHomeViewController.h; sourceTree = "<group>"; };
+		F502353D1BB3F29B002E73A1 /* LafontHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LafontHomeViewController.m; sourceTree = "<group>"; };
+		F50235431BB3F2D9002E73A1 /* LafontServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LafontServiceViewController.h; sourceTree = "<group>"; };
+		F50235441BB3F2D9002E73A1 /* LafontServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LafontServiceViewController.m; sourceTree = "<group>"; };
+		F50235461BB3FFD9002E73A1 /* LafontHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LafontHomeViewController.xib; sourceTree = "<group>"; };
+		F50235481BB40148002E73A1 /* LafontServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LafontServiceViewController.xib; sourceTree = "<group>"; };
+		F502354E1BB4F753002E73A1 /* LafontLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LafontLoginViewController.h; sourceTree = "<group>"; };
+		F502354F1BB4F753002E73A1 /* LafontLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LafontLoginViewController.m; sourceTree = "<group>"; };
+		F58BA8AC1BB3D13900743125 /* LafontCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LafontCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58BA8B01BB3D13900743125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58BA8BC1BB3D13900743125 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F58BA8C51BB3D13A00743125 /* LafontCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LafontCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58BA8CA1BB3D13A00743125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58BA8CB1BB3D13A00743125 /* LafontCarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LafontCarTests.m; sourceTree = "<group>"; };
+		F58BA8D61BB3D15100743125 /* ZDLaunchMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLaunchMenu.h; sourceTree = "<group>"; };
+		F58BA8D71BB3D15100743125 /* ZDLaunchMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLaunchMenu.m; sourceTree = "<group>"; };
+		F58BA8DA1BB3D33E00743125 /* NSObject+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Addition.h"; sourceTree = "<group>"; };
+		F58BA8DB1BB3D33E00743125 /* NSObject+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Addition.m"; sourceTree = "<group>"; };
+		F58BA8DC1BB3D33E00743125 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		F58BA8DD1BB3D33E00743125 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		F58BA8DE1BB3D33E00743125 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		F58BA8DF1BB3D33E00743125 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		F58BA8E01BB3D33E00743125 /* UIDevice+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Addition.h"; sourceTree = "<group>"; };
+		F58BA8E11BB3D33E00743125 /* UIDevice+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Addition.m"; sourceTree = "<group>"; };
+		F58BA8E21BB3D33E00743125 /* UIFont+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Addition.h"; sourceTree = "<group>"; };
+		F58BA8E31BB3D33E00743125 /* UIFont+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Addition.m"; sourceTree = "<group>"; };
+		F58BA8E41BB3D33E00743125 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		F58BA8E51BB3D33E00743125 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		F58BA8E61BB3D33E00743125 /* UIScreen+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Addition.h"; sourceTree = "<group>"; };
+		F58BA8E71BB3D33E00743125 /* UIScreen+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Addition.m"; sourceTree = "<group>"; };
+		F58BA8E81BB3D33E00743125 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		F58BA8E91BB3D33E00743125 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		F58BA8EA1BB3D33E00743125 /* UIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Additions.h"; sourceTree = "<group>"; };
+		F58BA8EB1BB3D33E00743125 /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Additions.m"; sourceTree = "<group>"; };
+		F58BA8EC1BB3D33E00743125 /* ZDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDAdditions.h; sourceTree = "<group>"; };
+		F58BA8F61BB3D38900743125 /* LafontCar.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LafontCar.pch; sourceTree = "<group>"; };
+		F5A5B2691BB51F7300191213 /* LafontLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LafontLoginViewController.xib; sourceTree = "<group>"; };
+		FFCF0840F32513776397CB35 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F58BA8A91BB3D13900743125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F502353B1BB3E741002E73A1 /* QMapKit.framework in Frameworks */,
+				751D80A387E6CA53C070FD3A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F58BA8C21BB3D13A00743125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC5B46DE56982EB0D4F63594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				067176FC4228220DD0BD0506 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F50234EB1BB3DE35002E73A1 /* ZDDefines */ = {
+			isa = PBXGroup;
+			children = (
+				F50234EC1BB3DE35002E73A1 /* ZDCommonDefines.h */,
+				F50234ED1BB3DE35002E73A1 /* ZDDefines.h */,
+			);
+			path = ZDDefines;
+			sourceTree = "<group>";
+		};
+		F50234EE1BB3DE89002E73A1 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				F50234EF1BB3DE89002E73A1 /* SFHFKeychainUtils.h */,
+				F50234F01BB3DE89002E73A1 /* SFHFKeychainUtils.m */,
+			);
+			path = SFHFKeychainUtils;
+			sourceTree = "<group>";
+		};
+		F50234F51BB3E11B002E73A1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F502354A1BB4F6F5002E73A1 /* Login */,
+				F50235031BB3E15F002E73A1 /* Base */,
+				F50234F61BB3E11B002E73A1 /* AppDelegate */,
+				F50234FA1BB3E11B002E73A1 /* Home */,
+				F50234FC1BB3E11B002E73A1 /* Main */,
+				F50234FF1BB3E11B002E73A1 /* Service */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F50234F61BB3E11B002E73A1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F50234F71BB3E11B002E73A1 /* AppDelegate.h */,
+				F50234F81BB3E11B002E73A1 /* AppDelegate.m */,
+				F50234F91BB3E11B002E73A1 /* main.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F50234FA1BB3E11B002E73A1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F50234FB1BB3E11B002E73A1 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F50234FB1BB3E11B002E73A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F502353C1BB3F29B002E73A1 /* LafontHomeViewController.h */,
+				F502353D1BB3F29B002E73A1 /* LafontHomeViewController.m */,
+				F50235461BB3FFD9002E73A1 /* LafontHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F50234FC1BB3E11B002E73A1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F502352E1BB3E424002E73A1 /* Model */,
+				F50234FD1BB3E11B002E73A1 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F50234FD1BB3E11B002E73A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F50235321BB3E501002E73A1 /* LafontMainViewController.h */,
+				F50235331BB3E501002E73A1 /* LafontMainViewController.m */,
+				F50235341BB3E501002E73A1 /* LafontMainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F50234FF1BB3E11B002E73A1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F50235001BB3E11B002E73A1 /* Controller */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F50235001BB3E11B002E73A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F50235431BB3F2D9002E73A1 /* LafontServiceViewController.h */,
+				F50235441BB3F2D9002E73A1 /* LafontServiceViewController.m */,
+				F50235481BB40148002E73A1 /* LafontServiceViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F50235031BB3E15F002E73A1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F502350F1BB3E2DD002E73A1 /* BaseObject */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F502350F1BB3E2DD002E73A1 /* BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				F50235101BB3E2DD002E73A1 /* BaseEntity */,
+				F50235151BB3E2DD002E73A1 /* BaseNavigation */,
+				F50235181BB3E2DD002E73A1 /* BaseViewController */,
+				F502351B1BB3E2DD002E73A1 /* BaseWebViewController */,
+				F502351F1BB3E2DD002E73A1 /* BCConfigurations */,
+				F50235231BB3E2DD002E73A1 /* BCConstant */,
+			);
+			path = BaseObject;
+			sourceTree = "<group>";
+		};
+		F50235101BB3E2DD002E73A1 /* BaseEntity */ = {
+			isa = PBXGroup;
+			children = (
+				F50235111BB3E2DD002E73A1 /* BaseEntity.h */,
+				F50235121BB3E2DD002E73A1 /* BaseEntity.m */,
+				F50235131BB3E2DD002E73A1 /* BaseRequest.h */,
+				F50235141BB3E2DD002E73A1 /* BaseRequest.m */,
+			);
+			path = BaseEntity;
+			sourceTree = "<group>";
+		};
+		F50235151BB3E2DD002E73A1 /* BaseNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				F50235161BB3E2DD002E73A1 /* BaseNavigationController.h */,
+				F50235171BB3E2DD002E73A1 /* BaseNavigationController.m */,
+			);
+			path = BaseNavigation;
+			sourceTree = "<group>";
+		};
+		F50235181BB3E2DD002E73A1 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F50235191BB3E2DD002E73A1 /* BaseViewController.h */,
+				F502351A1BB3E2DD002E73A1 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		F502351B1BB3E2DD002E73A1 /* BaseWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F502351C1BB3E2DD002E73A1 /* BCWebViewController.h */,
+				F502351D1BB3E2DD002E73A1 /* BCWebViewController.m */,
+				F502351E1BB3E2DD002E73A1 /* BCWebViewController.xib */,
+			);
+			path = BaseWebViewController;
+			sourceTree = "<group>";
+		};
+		F502351F1BB3E2DD002E73A1 /* BCConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				F50235201BB3E2DD002E73A1 /* BCConfigurationDefines.h */,
+				F50235211BB3E2DD002E73A1 /* BCConfigurations.h */,
+				F50235221BB3E2DD002E73A1 /* BCConfigurations.m */,
+			);
+			path = BCConfigurations;
+			sourceTree = "<group>";
+		};
+		F50235231BB3E2DD002E73A1 /* BCConstant */ = {
+			isa = PBXGroup;
+			children = (
+				F50235241BB3E2DD002E73A1 /* BCConstant.h */,
+				F50235251BB3E2DD002E73A1 /* BCConstantFont.h */,
+				F50235261BB3E2DD002E73A1 /* BCConstantUserDefaults.h */,
+			);
+			path = BCConstant;
+			sourceTree = "<group>";
+		};
+		F502352E1BB3E424002E73A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F502352F1BB3E424002E73A1 /* BCGlobalEntity.h */,
+				F50235301BB3E424002E73A1 /* BCGlobalEntity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F50235371BB3E741002E73A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F50235381BB3E741002E73A1 /* QMapKit.bundle */,
+				F50235391BB3E741002E73A1 /* QMapKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F502354A1BB4F6F5002E73A1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F502354B1BB4F6F5002E73A1 /* Controller */,
+				F502354C1BB4F6F5002E73A1 /* Model */,
+				F502354D1BB4F6F5002E73A1 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F502354B1BB4F6F5002E73A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F502354E1BB4F753002E73A1 /* LafontLoginViewController.h */,
+				F502354F1BB4F753002E73A1 /* LafontLoginViewController.m */,
+				F5A5B2691BB51F7300191213 /* LafontLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F502354C1BB4F6F5002E73A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F502354D1BB4F6F5002E73A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F58BA8A31BB3D13900743125 = {
+			isa = PBXGroup;
+			children = (
+				F58BA8AE1BB3D13900743125 /* LafontCar */,
+				F58BA8C81BB3D13A00743125 /* LafontCarTests */,
+				F58BA8AD1BB3D13900743125 /* Products */,
+				FE67230A48F9244E798452D4 /* Pods */,
+				BC5B46DE56982EB0D4F63594 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F58BA8AD1BB3D13900743125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F58BA8AC1BB3D13900743125 /* LafontCar.app */,
+				F58BA8C51BB3D13A00743125 /* LafontCarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F58BA8AE1BB3D13900743125 /* LafontCar */ = {
+			isa = PBXGroup;
+			children = (
+				F50235371BB3E741002E73A1 /* Frameworks */,
+				F50234F51BB3E11B002E73A1 /* Classes */,
+				F50234EE1BB3DE89002E73A1 /* SFHFKeychainUtils */,
+				F50234EB1BB3DE35002E73A1 /* ZDDefines */,
+				F58BA8D91BB3D33E00743125 /* ZDAdditions */,
+				F58BA8D51BB3D15100743125 /* ZDLaunchMenu */,
+				F58BA8AF1BB3D13900743125 /* Supporting Files */,
+			);
+			path = LafontCar;
+			sourceTree = "<group>";
+		};
+		F58BA8AF1BB3D13900743125 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F58BA8BC1BB3D13900743125 /* Images.xcassets */,
+				F58BA8B01BB3D13900743125 /* Info.plist */,
+				F58BA8F61BB3D38900743125 /* LafontCar.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F58BA8C81BB3D13A00743125 /* LafontCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				F58BA8CB1BB3D13A00743125 /* LafontCarTests.m */,
+				F58BA8C91BB3D13A00743125 /* Supporting Files */,
+			);
+			path = LafontCarTests;
+			sourceTree = "<group>";
+		};
+		F58BA8C91BB3D13A00743125 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F58BA8CA1BB3D13A00743125 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F58BA8D51BB3D15100743125 /* ZDLaunchMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F58BA8D61BB3D15100743125 /* ZDLaunchMenu.h */,
+				F58BA8D71BB3D15100743125 /* ZDLaunchMenu.m */,
+			);
+			path = ZDLaunchMenu;
+			sourceTree = "<group>";
+		};
+		F58BA8D91BB3D33E00743125 /* ZDAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				F58BA8DA1BB3D33E00743125 /* NSObject+Addition.h */,
+				F58BA8DB1BB3D33E00743125 /* NSObject+Addition.m */,
+				F58BA8DC1BB3D33E00743125 /* NSString+Addition.h */,
+				F58BA8DD1BB3D33E00743125 /* NSString+Addition.m */,
+				F58BA8DE1BB3D33E00743125 /* UIColor+Addition.h */,
+				F58BA8DF1BB3D33E00743125 /* UIColor+Addition.m */,
+				F58BA8E01BB3D33E00743125 /* UIDevice+Addition.h */,
+				F58BA8E11BB3D33E00743125 /* UIDevice+Addition.m */,
+				F58BA8E21BB3D33E00743125 /* UIFont+Addition.h */,
+				F58BA8E31BB3D33E00743125 /* UIFont+Addition.m */,
+				F58BA8E41BB3D33E00743125 /* UIImage+Addition.h */,
+				F58BA8E51BB3D33E00743125 /* UIImage+Addition.m */,
+				F58BA8E61BB3D33E00743125 /* UIScreen+Addition.h */,
+				F58BA8E71BB3D33E00743125 /* UIScreen+Addition.m */,
+				F58BA8E81BB3D33E00743125 /* UIView+Addition.h */,
+				F58BA8E91BB3D33E00743125 /* UIView+Addition.m */,
+				F58BA8EA1BB3D33E00743125 /* UIViewController+Additions.h */,
+				F58BA8EB1BB3D33E00743125 /* UIViewController+Additions.m */,
+				F58BA8EC1BB3D33E00743125 /* ZDAdditions.h */,
+			);
+			path = ZDAdditions;
+			sourceTree = "<group>";
+		};
+		FE67230A48F9244E798452D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFCF0840F32513776397CB35 /* Pods.debug.xcconfig */,
+				B26368A7882075F256BB06FA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F58BA8AB1BB3D13900743125 /* LafontCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F58BA8CF1BB3D13A00743125 /* Build configuration list for PBXNativeTarget "LafontCar" */;
+			buildPhases = (
+				D0AB1571A977B00226650AE3 /* Check Pods Manifest.lock */,
+				F58BA8A81BB3D13900743125 /* Sources */,
+				F58BA8A91BB3D13900743125 /* Frameworks */,
+				F58BA8AA1BB3D13900743125 /* Resources */,
+				674D527663A1C19B92C60458 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LafontCar;
+			productName = LafontCar;
+			productReference = F58BA8AC1BB3D13900743125 /* LafontCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F58BA8C41BB3D13A00743125 /* LafontCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F58BA8D21BB3D13A00743125 /* Build configuration list for PBXNativeTarget "LafontCarTests" */;
+			buildPhases = (
+				F58BA8C11BB3D13A00743125 /* Sources */,
+				F58BA8C21BB3D13A00743125 /* Frameworks */,
+				F58BA8C31BB3D13A00743125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F58BA8C71BB3D13A00743125 /* PBXTargetDependency */,
+			);
+			name = LafontCarTests;
+			productName = LafontCarTests;
+			productReference = F58BA8C51BB3D13A00743125 /* LafontCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F58BA8A41BB3D13900743125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Lafont;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = eggeggs;
+				TargetAttributes = {
+					F58BA8AB1BB3D13900743125 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F58BA8C41BB3D13A00743125 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F58BA8AB1BB3D13900743125;
+					};
+				};
+			};
+			buildConfigurationList = F58BA8A71BB3D13900743125 /* Build configuration list for PBXProject "LafontCar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F58BA8A31BB3D13900743125;
+			productRefGroup = F58BA8AD1BB3D13900743125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F58BA8AB1BB3D13900743125 /* LafontCar */,
+				F58BA8C41BB3D13A00743125 /* LafontCarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F58BA8AA1BB3D13900743125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F502352C1BB3E2DD002E73A1 /* BCWebViewController.xib in Resources */,
+				F50235471BB3FFD9002E73A1 /* LafontHomeViewController.xib in Resources */,
+				F502353A1BB3E741002E73A1 /* QMapKit.bundle in Resources */,
+				F5A5B26A1BB51F7300191213 /* LafontLoginViewController.xib in Resources */,
+				F50235361BB3E501002E73A1 /* LafontMainViewController.xib in Resources */,
+				F50235491BB40148002E73A1 /* LafontServiceViewController.xib in Resources */,
+				F58BA8BD1BB3D13900743125 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F58BA8C31BB3D13A00743125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		674D527663A1C19B92C60458 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0AB1571A977B00226650AE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F58BA8A81BB3D13900743125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50235021BB3E11B002E73A1 /* main.m in Sources */,
+				F58BA8F11BB3D33E00743125 /* UIFont+Addition.m in Sources */,
+				F50235501BB4F753002E73A1 /* LafontLoginViewController.m in Sources */,
+				F58BA8EE1BB3D33E00743125 /* NSString+Addition.m in Sources */,
+				F502353E1BB3F29B002E73A1 /* LafontHomeViewController.m in Sources */,
+				F50235451BB3F2D9002E73A1 /* LafontServiceViewController.m in Sources */,
+				F58BA8F21BB3D33E00743125 /* UIImage+Addition.m in Sources */,
+				F50235291BB3E2DD002E73A1 /* BaseNavigationController.m in Sources */,
+				F58BA8F31BB3D33E00743125 /* UIScreen+Addition.m in Sources */,
+				F50235351BB3E501002E73A1 /* LafontMainViewController.m in Sources */,
+				F50235311BB3E424002E73A1 /* BCGlobalEntity.m in Sources */,
+				F58BA8F01BB3D33E00743125 /* UIDevice+Addition.m in Sources */,
+				F502352A1BB3E2DD002E73A1 /* BaseViewController.m in Sources */,
+				F502352D1BB3E2DD002E73A1 /* BCConfigurations.m in Sources */,
+				F58BA8ED1BB3D33E00743125 /* NSObject+Addition.m in Sources */,
+				F50235281BB3E2DD002E73A1 /* BaseRequest.m in Sources */,
+				F50235271BB3E2DD002E73A1 /* BaseEntity.m in Sources */,
+				F58BA8F41BB3D33E00743125 /* UIView+Addition.m in Sources */,
+				F50234F11BB3DE89002E73A1 /* SFHFKeychainUtils.m in Sources */,
+				F50235011BB3E11B002E73A1 /* AppDelegate.m in Sources */,
+				F58BA8F51BB3D33E00743125 /* UIViewController+Additions.m in Sources */,
+				F58BA8D81BB3D15100743125 /* ZDLaunchMenu.m in Sources */,
+				F502352B1BB3E2DD002E73A1 /* BCWebViewController.m in Sources */,
+				F58BA8EF1BB3D33E00743125 /* UIColor+Addition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F58BA8C11BB3D13A00743125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58BA8CC1BB3D13A00743125 /* LafontCarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F58BA8C71BB3D13A00743125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F58BA8AB1BB3D13900743125 /* LafontCar */;
+			targetProxy = F58BA8C61BB3D13A00743125 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F58BA8CD1BB3D13A00743125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F58BA8CE1BB3D13A00743125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F58BA8D01BB3D13A00743125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCF0840F32513776397CB35 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LafontCar/Frameworks",
+				);
+				GCC_PREFIX_HEADER = LafontCar/LafontCar.pch;
+				INFOPLIST_FILE = LafontCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onefiter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F58BA8D11BB3D13A00743125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26368A7882075F256BB06FA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LafontCar/Frameworks",
+				);
+				GCC_PREFIX_HEADER = LafontCar/LafontCar.pch;
+				INFOPLIST_FILE = LafontCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onefiter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F58BA8D31BB3D13A00743125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LafontCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onefiter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LafontCar.app/LafontCar";
+			};
+			name = Debug;
+		};
+		F58BA8D41BB3D13A00743125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LafontCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onefiter.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LafontCar.app/LafontCar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F58BA8A71BB3D13900743125 /* Build configuration list for PBXProject "LafontCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58BA8CD1BB3D13A00743125 /* Debug */,
+				F58BA8CE1BB3D13A00743125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F58BA8CF1BB3D13A00743125 /* Build configuration list for PBXNativeTarget "LafontCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58BA8D01BB3D13A00743125 /* Debug */,
+				F58BA8D11BB3D13A00743125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F58BA8D21BB3D13A00743125 /* Build configuration list for PBXNativeTarget "LafontCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58BA8D31BB3D13A00743125 /* Debug */,
+				F58BA8D41BB3D13A00743125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F58BA8A41BB3D13900743125 /* Project object */;
+}

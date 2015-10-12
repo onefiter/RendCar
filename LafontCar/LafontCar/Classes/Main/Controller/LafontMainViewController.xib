@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LafontMainViewController">
+            <connections>
+                <outlet property="imgWork" destination="0bv-3u-M0X" id="XIz-RY-28b"/>
+                <outlet property="tabBar" destination="a9N-yd-MCM" id="PDV-ZF-BJy"/>
+                <outlet property="tabBarView" destination="rRZ-gl-xAO" id="43o-gj-o85"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewWork" destination="ya8-Tm-oI0" id="8fz-7i-EsS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ya8-Tm-oI0">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0bv-3u-M0X">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0bv-3u-M0X" firstAttribute="leading" secondItem="ya8-Tm-oI0" secondAttribute="leading" id="30z-mo-li6"/>
+                        <constraint firstItem="0bv-3u-M0X" firstAttribute="top" secondItem="ya8-Tm-oI0" secondAttribute="top" id="A2I-C9-r54"/>
+                        <constraint firstAttribute="bottom" secondItem="0bv-3u-M0X" secondAttribute="bottom" id="Yzl-Bn-hZM"/>
+                        <constraint firstAttribute="trailing" secondItem="0bv-3u-M0X" secondAttribute="trailing" id="ehB-pe-K3m"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRZ-gl-xAO">
+                    <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                    <subviews>
+                        <tabBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="a9N-yd-MCM">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <items/>
+                        </tabBar>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="a9N-yd-MCM" secondAttribute="trailing" id="6DN-Jp-h8i"/>
+                        <constraint firstItem="a9N-yd-MCM" firstAttribute="top" secondItem="rRZ-gl-xAO" secondAttribute="top" id="Dt6-yC-WKy"/>
+                        <constraint firstAttribute="height" constant="49" id="JNL-Ba-Duf"/>
+                        <constraint firstItem="a9N-yd-MCM" firstAttribute="leading" secondItem="rRZ-gl-xAO" secondAttribute="leading" id="Rt8-00-rxd"/>
+                        <constraint firstAttribute="bottom" secondItem="a9N-yd-MCM" secondAttribute="bottom" id="evJ-Ml-Dr2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ya8-Tm-oI0" secondAttribute="bottom" id="1OT-EB-vCm"/>
+                <constraint firstAttribute="bottom" secondItem="rRZ-gl-xAO" secondAttribute="bottom" id="1jp-uf-cHK"/>
+                <constraint firstAttribute="trailing" secondItem="rRZ-gl-xAO" secondAttribute="trailing" id="8a4-aZ-Ibs"/>
+                <constraint firstAttribute="trailing" secondItem="ya8-Tm-oI0" secondAttribute="trailing" id="Cpn-38-ky1"/>
+                <constraint firstItem="ya8-Tm-oI0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SgT-1O-iDj"/>
+                <constraint firstItem="ya8-Tm-oI0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T4g-Cg-LE5"/>
+                <constraint firstItem="rRZ-gl-xAO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bF6-X9-7mn"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
